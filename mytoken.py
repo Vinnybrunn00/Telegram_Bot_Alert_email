@@ -2,6 +2,6 @@ def TeleToken():
     return 'YOUR_TOKEN_TELEBOT'
 
 
-def PassVini():
+def Password():
     return 'YOUR_TOKEN_EMAIL'
 
