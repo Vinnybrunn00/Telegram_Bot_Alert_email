@@ -18,7 +18,7 @@ class EmailAlert:
     @bot.message_handler(commands=['start'])
     def Gmail(message):
         while True:
-            with MailBox('imap.gmail.com').login(user, PassVini()) as inbox:
+            with MailBox('imap.gmail.com').login(user, Password()) as inbox:
                 for msg in inbox.fetch(AND(seen=False)):
                     print(f'\n\nNova mensagem de {msg.from_}')
                     data = msg.date
